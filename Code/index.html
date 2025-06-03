@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotReallyHired</title>
+</head>
+<body style="background-color: #fdf6e3; color: #333;">
+    <h1 style="text-align: center; font-family: Arial,sans-serif;">NotReallyHired</h1>
+    <div style="display: flex; justify-content: center;"><button onclick="generateCV()"  style="background-color: #ffb347; padding: 20px; font-size: large;">Generate My Fake CV</button></div>
+    <br>
+    <div id="cv" style="text-align: center; font-family: Arial,sans-serif; "></div>
+
+    <script>
+  function generateCV() {
+    const names = ["Lily Moon", "Ava Blaze", "Max Thunder", "Finn Falcon", "Jake Frost", "Mia Shadow", "Ruby Star", "Timo Swift"];
+    const jobs = ["Professional Napper", "Chief Unicorn Trainer", "Digital Overthinker", "Ice Cream Quality Inspector", "Bubble Wrap Popper", "Galactic Sandwich Artist", "Virtual Reality Plant Waterer", "Time Travel Coordinator", "Wizard of Light Bulb Moments", "Official Daydream Tester"];
+    const goodat = ["Good at teleporting", "Good at staring contests", "Good at making coffee disappear", "Good at procrastinating", "Good at balancing simit", "Good at making memes", "Good at daydreaming", "Good at napping anywhere", "Good at guessing time by smell", "Good at talking to plants"];
+    const want = ["My goal is to spread pizza and peace.", "My goal is to spread coffee and peace.", "My goal is to spread tacos and peace.", "My goal is to spread donuts and peace.", "My goal is to spread happiness and peace.", "My goal is to spread memes and peace.", "My goal is to spread smiles and peace."];
+
+    const name = names[Math.floor(Math.random() * names.length)];
+    const job = jobs[Math.floor(Math.random() * jobs.length)];
+    const skill = goodat[Math.floor(Math.random() * goodat.length)];
+    const goal = want[Math.floor(Math.random() * want.length)];
+
+    const result = `
+      My name is ${name}.<br>
+      I worked as ${job}.<br>
+      I am good at ${skill}.<br>
+      ${goal}
+    `;
+
+    document.getElementById("cv").innerHTML = result;
+  }
+</script>
+
+<div id="marquee" style="
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffb347;
+  padding: 10px;
+  font-size: large;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: Arial,sans-serif;
+  "><marquee>Welcome to NotReallyHired — where fake resumes are our specialty and serious job offers are... optional. Press the button, embrace your inner legend, and remember: nobody checks these anyway!</marquee>
+  
+</div>
+
+
+</body>
+</html>
