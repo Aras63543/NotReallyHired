@@ -11,12 +11,42 @@
     <br>
     <div id="cv" style="text-align: center; font-family: Arial,sans-serif; "></div>
 
-    <script>
+  <script>
   function generateCV() {
     const names = ["Lily Moon", "Ava Blaze", "Max Thunder", "Finn Falcon", "Jake Frost", "Mia Shadow", "Ruby Star", "Timo Swift"];
-    const jobs = ["Professional Napper", "Chief Unicorn Trainer", "Digital Overthinker", "Ice Cream Quality Inspector", "Bubble Wrap Popper", "Galactic Sandwich Artist", "Virtual Reality Plant Waterer", "Time Travel Coordinator", "Wizard of Light Bulb Moments", "Official Daydream Tester"];
-    const goodat = ["Good at teleporting", "Good at staring contests", "Good at making coffee disappear", "Good at procrastinating", "Good at balancing simit", "Good at making memes", "Good at daydreaming", "Good at napping anywhere", "Good at guessing time by smell", "Good at talking to plants"];
-    const want = ["My goal is to spread pizza and peace.", "My goal is to spread coffee and peace.", "My goal is to spread tacos and peace.", "My goal is to spread donuts and peace.", "My goal is to spread happiness and peace.", "My goal is to spread memes and peace.", "My goal is to spread smiles and peace."];
+    const jobs = [
+      "Professional Napper",
+      "Chief Unicorn Trainer",
+      "Digital Overthinker",
+      "Ice Cream Quality Inspector",
+      "Bubble Wrap Popper",
+      "Galactic Sandwich Artist",
+      "Virtual Reality Plant Waterer",
+      "Time Travel Coordinator",
+      "Wizard of Light Bulb Moments",
+      "Official Daydream Tester"
+    ];
+    const goodat = [
+      "teleporting",
+      "staring contests",
+      "making coffee disappear",
+      "procrastinating",
+      "balancing simit",
+      "making memes",
+      "daydreaming",
+      "napping anywhere",
+      "guessing time by smell",
+      "talking to plants"
+    ];
+    const want = [
+      "My goal is to spread pizza and peace.",
+      "My goal is to spread coffee and peace.",
+      "My goal is to spread tacos and peace.",
+      "My goal is to spread donuts and peace.",
+      "My goal is to spread happiness and peace.",
+      "My goal is to spread memes and peace.",
+      "My goal is to spread smiles and peace."
+    ];
 
     const name = names[Math.floor(Math.random() * names.length)];
     const job = jobs[Math.floor(Math.random() * jobs.length)];
@@ -33,6 +63,7 @@
     document.getElementById("cv").innerHTML = result;
   }
 </script>
+
 <footer style="text-align: center;  margin-top: 10px; font-family: Arial, sans-serif; color: #333;">Made by Aras63543 (GitHub)</footer>
 <div id="marquee" style="
   position: fixed;
